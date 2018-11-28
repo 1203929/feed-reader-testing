@@ -47,8 +47,8 @@ $(function() {
            allFeeds.forEach(function(feed){
              expect(feed.name).toBeDefined();
              expect(feed.name.length).not.toBe(0);
-           })
-         })
+           });
+         });
     });
 
 
@@ -69,7 +69,7 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
-          it('toggle visibility on click', function(){
+          it('toggles visibility on click', function(){
             $('a.menu-icon-link').trigger('click');
             expect($('body').hasClass('menu-hidden')).toBe(false);
             $('a.menu-icon-link').trigger('click');
