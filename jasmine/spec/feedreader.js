@@ -109,7 +109,7 @@ $(function() {
           });
         });
         it('is different from old', function(){
-          expect($('.feed').html().not.toBe(oldFeed));
+          expect($('.feed').html()).not.toBe(oldFeed);
 
         });
      });
